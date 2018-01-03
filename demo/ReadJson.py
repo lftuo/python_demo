@@ -12,5 +12,12 @@ with open('city.json', 'r') as json_file:
     data = json.load(json_file)
 
 
-for x in data:
-    print x['city'],x['code']
+#for x in data:
+#    print x['city'],x['code']
+start_urls = []
+
+for i in data:
+    start_urls.append("https://%s.fang.lianjia.com/loupan/rs/"%i['code'])
+
+for x in  start_urls:
+    print x
