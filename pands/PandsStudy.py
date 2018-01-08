@@ -4,7 +4,8 @@
 # @Time : 2017-12-28 11:08:29
 # @File : PandsStudy.py
 # @Software : IntelliJ IDEA
-import numpy as np, pandas as pd
+import numpy as np
+import pandas as pd
 
 #1/Series的创建
 #序列的创建主要有三种方式
