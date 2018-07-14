@@ -15,13 +15,14 @@ def get_html(times):
     print("get page {}s finished".format(times))
     return times
 
-executor = ThreadPoolExecutor(max_workers=2)
+executor = ThreadPoolExecutor(max_workers=4)
 
 # 通过submit函数提交执行函数到线程池中，submit函数不会立即返回，不阻塞
-task1 = executor.submit(get_html, (3))
-task2 = executor.submit(get_html, (2))
-task3 = executor.submit(get_html, (13))
-task4 = executor.submit(get_html, (8))
+task1 = executor.submit(get_html, (13))
+task2 = executor.submit(get_html, (8))
+task3 = executor.submit(get_html, (3))
+task4 = executor.submit(get_html, (2))
+
 
 # done方法用于判断某个线程是否执行完
 print(task1.done())
