@@ -20,4 +20,4 @@ for i in data:
     start_urls.append("https://%s.fang.lianjia.com/loupan/rs/"%i['code'])
 
 for x in  start_urls:
-    print x
+    print(x)
