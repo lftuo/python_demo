@@ -1,0 +1,13 @@
+artifact_uri: /Users/tuotuo/Documents/codes/python_demo/mlflow_test/mlruns/0/2ca467c50db546b5a7f022be1a87d30c/artifacts
+end_time: 1532608229884
+entry_point_name: ''
+experiment_id: 0
+name: Run 1
+run_uuid: 2ca467c50db546b5a7f022be1a87d30c
+source_name: /Users/tuotuo/Documents/codes/python_demo/mlflow_test/LogicTest.py
+source_type: 4
+source_version: 89179151c7135460f07c7e1edc83e2dea5fc7584
+start_time: 1532608229567
+status: 3
+tags: []
+user_id: tuotuo

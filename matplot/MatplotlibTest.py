@@ -27,7 +27,7 @@ plt.show()
 fig,axes = plt.subplots(2,3)
 
 #print fig
-print axes[0][0]
+print(axes[0][0])
 #axes[0][0].hist(np.random.randn(100),bins = 20,color = 'k',alpha = 0.3)
 plt.show()
 #这是非常实用的，因为可以轻松地对axes数组进行索引，就好像一个是一个二维数组一样，例如
