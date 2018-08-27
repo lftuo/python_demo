@@ -14,6 +14,7 @@ def calc(i):
         sum += 1
     print(i,sum)
 
+
 if __name__ == "__main__":
 
     start = datetime.datetime.now()
