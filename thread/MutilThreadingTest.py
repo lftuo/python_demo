@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # 定义同时至多起几个线程
     pool = multiprocessing.Pool(10)
     for i in range(10):
-        pool.apply_async(calc,args=(i,))
+        pool.apply(calc,args=(i,))
 
     # 用来阻止多余的进程涌入进程池 Pool 造成进程阻塞。
     pool.close()
