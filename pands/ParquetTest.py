@@ -20,8 +20,9 @@ import pandas as pd
 
 
 head = ["id" , "name" , "age"]
-l = [[1 , 'zhangsan' , 22],[2, 'lisi', 6] , [3 , 'wangwu' , 19]]
+l = [[1 , 'zhangsan' , 22],[2, 'lisi', 6] , [3 , 'wangwu' , 19], [4 , 'zhaoliu' , 26]]
 df = pd.DataFrame (l , columns = head)
+print(len(df))
 print(df)
 df.to_csv ("testfoo.csv" , encoding = "utf-8")
 dfxx = pd.read_csv("testfoo.csv",encoding='utf-8')

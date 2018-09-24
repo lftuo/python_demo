@@ -2,10 +2,10 @@
 # -*- coding:utf8 -*-
 # @Author : tuolifeng
 # @Time : 2018/8/27 下午3:17
-# @File : MutilThreadingTest.py
+# @File : MutilThreadingTestApplyAsync.py
 # @Software : IntelliJ IDEA
 # @Email ： 909709223@qq.com
-import multiprocessing
+from multiprocessing import Pool
 import datetime
 
 def calc(i):
@@ -20,9 +20,11 @@ if __name__ == "__main__":
     start = datetime.datetime.now()
 
     # 定义同时至多起几个线程
-    pool = multiprocessing.Pool(10)
-    for i in range(10):
-        pool.apply(calc,args=(i,))
+    pool = Pool(10)
+    # pool = multiprocessing.Pool(10)
+    pool.map(calc,range(10))
+    #for i in range(10):
+    #    pool.apply_async(calc,args=(i,))
 
     # 用来阻止多余的进程涌入进程池 Pool 造成进程阻塞。
     pool.close()
